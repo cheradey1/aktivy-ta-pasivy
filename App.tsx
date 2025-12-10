@@ -135,7 +135,7 @@ const App = () => {
 
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <div>
-              <p className="text-gray-400 text-xs font-mono mb-2 uppercase tracking-widest">>> Monthly Balance Status</p>
+              <p className="text-gray-400 text-xs font-mono mb-2 uppercase tracking-widest">{'>>'} Monthly Balance Status</p>
               <h2 className={`text-5xl md:text-6xl font-black tracking-tighter font-mono ${isPositive ? 'text-neon-green drop-shadow-[0_0_5px_rgba(57,255,20,0.8)]' : 'text-neon-red drop-shadow-[0_0_5px_rgba(255,0,60,0.8)]'}`}>
                 {balance > 0 ? '+' : ''}{balance.toLocaleString()} {settings.currency}
               </h2>
